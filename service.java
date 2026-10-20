@@ -77,11 +77,4 @@ public class service {
             System.out.println("record not found !!");
         }
     }
-
-    // void changeRoom(String name,int number){
-    //     ArrayList<student> list = student.getroomNumber();
-
-
-    //     if()
-    // }
 }

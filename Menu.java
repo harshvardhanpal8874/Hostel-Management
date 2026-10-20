@@ -19,13 +19,11 @@ public class Menu {
             System.out.println("---please select one options among them ---");
             System.out.println("1. Add Student  ");
             System.out.println("2. Add Room  ");            
-            System.out.println("3. View Students  ");
-            System.out.println("4. Update Details ");
-            System.out.println("5. Remove student  ");
-            System.out.println("6. search student ");
-            System.out.println("7. Display room ");
-            System.out.println("8. Change room ");
-            System.out.println("9. Exit  ");
+            System.out.println("3.Display Student  ");
+            System.out.println("4. Update Student ");
+            System.out.println("5. Remove Student  ");
+            System.out.println("6. Search Student ");
+            System.out.println("7. Exit  ");
             int choice = Integer.parseInt(sc.nextLine());
             
             switch(choice){
@@ -35,15 +33,9 @@ public class Menu {
             case 2:
                 addRoom();
                 break;
-            // case 3:
-            //     allocateRoom();
-            //     break;
             case 3:
                 displayStudent();
                 break;
-            // case 5:
-            //     //displayRoom();
-            //     break;
             case 4:
                 updateStudent();
                 break;
@@ -52,16 +44,10 @@ public class Menu {
                 break;
             case 6:
                 searchStudent();
-                break;
+                break; 
             case 7:
-                displayRoom();
+                System.exit(0); 
                 break;
-            // case 8:
-            //     changeRoom();
-            //     break;
-            case 9:
-                System.out.println(" Thank you !!");
-                return;  
             default:
                 System.out.println("Invalid input!! try again");
         }
@@ -109,9 +95,7 @@ public class Menu {
             
         }
 
-        // void allocateRoom(){
-
-        // }
+        
 
 
 
@@ -137,15 +121,10 @@ public class Menu {
             System.out.println("Course : " + data.getStdCourse());
             System.out.println("Phone number : " + data.getStdPhnNo());
             System.out.println("Room number : " + data.getroomNumber() );
+            
             System.out.println("=================");
         }
         
-
-        // void displayRoom(){
-        //     for( room record : list2){
-        //         System.out.println(record+" ");
-        //     }
-        // }
 
         void updateStudent(){
             System.out.println(" enter the ID of student whose details are incorrect !!");
@@ -191,26 +170,7 @@ public class Menu {
             System.out.println("--enter the name of student you want to search !!-- ");
             String searchStudentName = sc.nextLine();
             service.searchStudent(searchStudentName);
-        }
-
-        void displayRoom(){
-            System.out.println("===================");
-            ArrayList<student> list = service.getStudent();
-            for(student s : list){
-
-            }
-            System.out.println("===================");
-        }
-
-        // void changeRoom(){
-        //     System.out.println(" enter the Name of student who want to change room !!");
-        //     String changeRoomName = sc.nextLine();
-        //     System.out.println("enter updayed room number ");
-        //     int number = Integer.parseInt(sc.nextLine());
-        //     changeRoom(changeRoomName,number);
-
-        // }
-        
+        }     
         
         
 }
