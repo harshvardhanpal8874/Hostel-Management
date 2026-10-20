@@ -48,7 +48,7 @@ This project helped me practise Core Java, object-oriented programming, collecti
 
 ## 👨‍💻 Author
 
-**Harshvardhan Pal**
+**Harsh Vardhan Pal**
 
 GitHub: [harshvardhanpal18874](https://github.com/harshvardhanpal18874)
 
